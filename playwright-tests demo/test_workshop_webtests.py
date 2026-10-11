@@ -345,7 +345,7 @@ def test_continue_button_error_your_details(page: Page):
 
   expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
   expect(page).to_have_title(re.compile("Academic info"))
-  
+
   # expect(page.get_by_test_id("select-major")).not_to_be_empty()
   expect(page.get_by_test_id("input-academic-year")).to_be_empty()
   # expect(page.get_by_test_id("select-term")).not_to_be_empty()
@@ -363,13 +363,72 @@ def test_continue_button_error_your_details(page: Page):
 def test_has_duplicate_subject_name(page: Page):
   page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
 
-  # Click the get started link.
-  page.get_by_role("link", name="Get started").click()
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
 
+  page.get_by_test_id("input-full-name").fill("testone test")
+  page.get_by_test_id("input-student-id").fill("23abc234 dsf")
+  page.get_by_test_id("input-school-name").fill("iit-m chennai")
+  page.get_by_test_id("input-email").fill("test@example.com")
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+
+  page.get_by_test_id("select-major").select_option("Computer Science")
+  page.get_by_test_id("input-academic-year").fill("2023")
+  page.get_by_test_id("select-term").select_option("T3-2025")
+
+  page.get_by_test_id("button-continue-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/subjects")
+  expect(page).to_have_title(re.compile("Subjects"))
+
+  page.get_by_test_id("input-new-subject").fill("MathCS3002")
+  page.get_by_test_id("input-new-score").fill("50")
+  page.get_by_test_id("button-add-subject").click()
+
+  page.get_by_test_id("input-new-subject").fill("MathCS3002")
+  page.get_by_test_id("input-new-score").fill("60")
+  page.get_by_test_id("button-add-subject").click()
+
+  expect(page.get_by_test_id("status-feedback")).to_contain_text("Subject added.")
+  expect(page.get_by_test_id("input-subject-name-1")).to_have_value("MathCS3002")
+  # Click the get started link.
   # Expects page to have a heading with the name of Installation.
-  expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+  # expect(page.get_by_role("heading", name="Installation")).to_be_visible()
 
 def test_no_duplicate_subject_name(page: Page):
   page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
 
-  # 
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
+
+  page.get_by_test_id("input-full-name").fill("testone test")
+  page.get_by_test_id("input-student-id").fill("23abc234 dsf")
+  page.get_by_test_id("input-school-name").fill("iit-m chennai")
+  page.get_by_test_id("input-email").fill("test@example.com")
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+
+  page.get_by_test_id("select-major").select_option("Computer Science")
+  page.get_by_test_id("input-academic-year").fill("2023")
+  page.get_by_test_id("select-term").select_option("T3-2025")
+
+  page.get_by_test_id("button-continue-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/subjects")
+  expect(page).to_have_title(re.compile("Subjects"))
+
+  page.get_by_test_id("input-new-subject").fill("MathCS3002")
+  page.get_by_test_id("input-new-score").fill("50")
+  page.get_by_test_id("button-add-subject").click()
+
+  page.get_by_test_id("input-new-subject").fill("MathCS3002")
+  page.get_by_test_id("input-new-score").fill("60")
+  page.get_by_test_id("button-add-subject").click()
+
+  expect(page.get_by_test_id("status-feedback")).to_contain_text("has already been added.")
+  expect(page.get_by_test_id("input-subject-name-1")).to_be_hidden()
