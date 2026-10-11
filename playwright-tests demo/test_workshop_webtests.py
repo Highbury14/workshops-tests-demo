@@ -186,17 +186,78 @@ def test_main_version(page: Page):
 
   # breakpoint()
 
-'''def test_has_title(page: Page):
-  page.goto("https://playwright.dev/")
+def test_has_email_validation(page: Page):
+  page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
 
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
   # Expect a title "to contain" a substring.
-  expect(page).to_have_title(re.compile("Playwright"))
+  expect(page).to_have_title(re.compile("Your details"))
 
-def test_get_started_link(page: Page):
-  page.goto("https://playwright.dev/")
+  page.get_by_test_id("input-full-name").fill("testone test")
+  page.get_by_test_id("input-student-id").fill("23abc234 dsf")
+  page.get_by_test_id("input-school-name").fill("iit-m chennai")
+  page.get_by_test_id("input-email").fill("testexamplecom")
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page.get_by_text("Enter a valid email address.")).to_be_visible()
+
+def test_no_email_validation(page: Page):
+  page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
+
+  page.get_by_test_id("input-full-name").fill("testone test")
+  page.get_by_test_id("input-student-id").fill("23abc234 dsf")
+  page.get_by_test_id("input-school-name").fill("iit-m chennai")
+  page.get_by_test_id("input-email").fill("testexamplecom")
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+
+def test_back_button_error_academic_info(page: Page):
+  page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
+
+
+
+def test_good_back_button_academic_info(page: Page):
+  page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
+
+  # Click the get started link.
+
+  # Expects page to have a heading with the name of Installation.
+  expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+
+def test_good_continue_button_your_details(page: Page):
+  page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
 
   # Click the get started link.
   page.get_by_role("link", name="Get started").click()
 
   # Expects page to have a heading with the name of Installation.
-  expect(page.get_by_role("heading", name="Installation")).to_be_visible()'''
+  expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+
+def test_continue_button_error_your_details(page: Page):
+  page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
+
+  # Click the get started link.
+  page.get_by_role("link", name="Get started").click()
+
+  # Expects page to have a heading with the name of Installation.
+  expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+
+def test_has_duplicate_subject_name(page: Page):
+  page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
+
+  # Click the get started link.
+  page.get_by_role("link", name="Get started").click()
+
+  # Expects page to have a heading with the name of Installation.
+  expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+
+def test_no_duplicate_subject_name(page: Page):
+  page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
+
+  # 
