@@ -1,0 +1,57 @@
+--- [2026-10-11 14:26:32] PyTest Run Execution Beginning ---
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0
+rootdir: F:\Project-source-code\workshops tests demo\playwright-tests demo
+plugins: anyio-4.12.1, langsmith-0.14.4, base-url-2.1.0, playwright-0.9.0
+collected 2 items
+
+test_workshop_webtests.py ..                                             [100%]
+
+============================= 2 passed in 44.71s ==============================
+--- [2026-10-11 14:28:02] PyTest Run Ended with Exit Code: 0 ---
+--- [2026-10-11 14:28:35] PyTest Run Execution Beginning ---
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0
+rootdir: F:\Project-source-code\workshops tests demo\playwright-tests demo
+plugins: anyio-4.12.1, langsmith-0.14.4, base-url-2.1.0, playwright-0.9.0
+collected 2 items
+
+test_workshop_webtests.py ..                                             [100%]
+
+============================= 2 passed in 25.80s ==============================
+--- [2026-10-11 14:29:12] PyTest Run Ended with Exit Code: 0 ---
+--- [2026-10-11 15:02:24] PyTest Run Execution Beginning ---
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0
+rootdir: F:\Project-source-code\workshops tests demo\playwright-tests demo
+plugins: anyio-4.12.1, langsmith-0.14.4, base-url-2.1.0, playwright-0.9.0
+collected 2 items
+
+test_workshop_webtests.py ..                                             [100%]
+
+============================= 2 passed in 35.41s ==============================
+--- [2026-10-11 15:03:33] PyTest Run Ended with Exit Code: 0 ---
+--- [2026-10-11 15:21:26] PyTest Run Execution Beginning ---
+Executed Pytests-command: python -m pytest
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0
+rootdir: F:\Project-source-code\workshops tests demo\playwright-tests demo
+plugins: anyio-4.12.1, langsmith-0.14.4, base-url-2.1.0, playwright-0.9.0
+collected 2 items
+
+test_workshop_webtests.py ..                                             [100%]
+
+============================= 2 passed in 10.98s ==============================
+--- [2026-10-11 15:21:40] PyTest Run Ended with Exit Code: 0 ---
+--- [2026-10-11 15:33:56] PyTest Run Execution Beginning ---
+Executed Pytests-command: python -m pytest --headed
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0
+rootdir: F:\Project-source-code\workshops tests demo\playwright-tests demo
+plugins: anyio-4.12.1, langsmith-0.14.4, base-url-2.1.0, playwright-0.9.0
+collected 2 items
+
+test_workshop_webtests.py ..                                             [100%]
+
+============================= 2 passed in 38.58s ==============================
+--- [2026-10-11 15:34:39] PyTest Run Ended with Exit Code: 0 ---

@@ -1,0 +1,17 @@
+.env
+.env.*
+.adk/
+
+*.pyc
+*.pyo
+*.pyd
+
+__pycache__/
+
+.venv/
+venv/
+env/
+
+*.code-workspace
+vscode/
+.vscode/
