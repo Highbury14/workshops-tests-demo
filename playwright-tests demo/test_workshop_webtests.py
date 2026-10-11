@@ -220,15 +220,60 @@ def test_no_email_validation(page: Page):
 def test_back_button_error_academic_info(page: Page):
   page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
 
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
 
+  page.get_by_test_id("input-full-name").fill("testone test")
+  page.get_by_test_id("input-student-id").fill("23abc234 dsf")
+  page.get_by_test_id("input-school-name").fill("iit-m chennai")
+  page.get_by_test_id("input-email").fill("test@example.com")
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+
+  page.get_by_test_id("button-back-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
+
+  expect(page.get_by_test_id("input-full-name")).to_be_empty()
+  expect(page.get_by_test_id("input-student-id")).to_be_empty()
+  expect(page.get_by_test_id("input-school-name")).to_be_empty()
+  expect(page.get_by_test_id("input-email")).to_be_empty()
 
 def test_good_back_button_academic_info(page: Page):
   page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
 
-  # Click the get started link.
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
 
+  page.get_by_test_id("input-full-name").fill("testone test")
+  page.get_by_test_id("input-student-id").fill("23abc234 dsf")
+  page.get_by_test_id("input-school-name").fill("iit-m chennai")
+  page.get_by_test_id("input-email").fill("test@example.com")
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+
+  page.get_by_test_id("button-back-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
+
+  expect(page.get_by_test_id("input-full-name")).not_to_be_empty()
+  expect(page.get_by_test_id("input-student-id")).not_to_be_empty()
+  expect(page.get_by_test_id("input-school-name")).not_to_be_empty()
+  expect(page.get_by_test_id("input-email")).not_to_be_empty()
+  expect(page.get_by_test_id("input-full-name")).to_have_value("testone test")
+  expect(page.get_by_test_id("input-student-id")).to_have_value("23abc234 dsf")
+  expect(page.get_by_test_id("input-school-name")).to_have_value("iit-m chennai")
+  expect(page.get_by_test_id("input-email")).to_have_value("test@example.com")
+  
+  # Click the get started link.
   # Expects page to have a heading with the name of Installation.
-  expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+  # expect(page.get_by_role("heading", name="Installation")).to_be_visible()
 
 def test_good_continue_button_your_details(page: Page):
   page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
