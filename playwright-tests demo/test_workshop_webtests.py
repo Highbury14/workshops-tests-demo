@@ -270,7 +270,7 @@ def test_good_back_button_academic_info(page: Page):
   expect(page.get_by_test_id("input-student-id")).to_have_value("23abc234 dsf")
   expect(page.get_by_test_id("input-school-name")).to_have_value("iit-m chennai")
   expect(page.get_by_test_id("input-email")).to_have_value("test@example.com")
-  
+
   # Click the get started link.
   # Expects page to have a heading with the name of Installation.
   # expect(page.get_by_role("heading", name="Installation")).to_be_visible()
@@ -278,20 +278,87 @@ def test_good_back_button_academic_info(page: Page):
 def test_good_continue_button_your_details(page: Page):
   page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
 
-  # Click the get started link.
-  page.get_by_role("link", name="Get started").click()
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
 
+  page.get_by_test_id("input-full-name").fill("testone test")
+  page.get_by_test_id("input-student-id").fill("23abc234 dsf")
+  page.get_by_test_id("input-school-name").fill("iit-m chennai")
+  page.get_by_test_id("input-email").fill("test@example.com")
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+
+  page.get_by_test_id("select-major").select_option("Computer Science")
+  page.get_by_test_id("input-academic-year").fill("2023")
+  page.get_by_test_id("select-term").select_option("T3-2025")
+
+  page.get_by_test_id("button-back-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
+
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+
+  # expect(page.get_by_test_id("select-major")).not_to_be_empty()
+  expect(page.get_by_test_id("input-academic-year")).not_to_be_empty()
+  # expect(page.get_by_test_id("select-term")).not_to_be_empty()
+  # expect(page.get_by_test_id("input-email")).not_to_be_empty()
+
+  expect(page.get_by_test_id("select-major")).to_have_value("Computer Science")
+  expect(page.get_by_test_id("input-academic-year")).to_have_value("2023")
+  expect(page.get_by_test_id("select-term")).to_have_value("T3-2025")
+
+  # Click the get started link.
   # Expects page to have a heading with the name of Installation.
-  expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+  # expect(page.get_by_role("heading", name="Installation")).to_be_visible()
 
 def test_continue_button_error_your_details(page: Page):
   page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
 
-  # Click the get started link.
-  page.get_by_role("link", name="Get started").click()
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
 
+  page.get_by_test_id("input-full-name").fill("testone test")
+  page.get_by_test_id("input-student-id").fill("23abc234 dsf")
+  page.get_by_test_id("input-school-name").fill("iit-m chennai")
+  page.get_by_test_id("input-email").fill("test@example.com")
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+
+  page.get_by_test_id("select-major").select_option("Computer Science")
+  page.get_by_test_id("input-academic-year").fill("2023")
+  page.get_by_test_id("select-term").select_option("T3-2025")
+
+  page.get_by_test_id("button-back-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/")
+  expect(page).to_have_title(re.compile("Your details"))
+
+  page.get_by_test_id("button-continue-student").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop-test.onrender.com/academic")
+  expect(page).to_have_title(re.compile("Academic info"))
+  
+  # expect(page.get_by_test_id("select-major")).not_to_be_empty()
+  expect(page.get_by_test_id("input-academic-year")).to_be_empty()
+  # expect(page.get_by_test_id("select-term")).not_to_be_empty()
+  # expect(page.get_by_test_id("input-email")).not_to_be_empty()
+
+  expect(page.get_by_test_id("select-major")).to_have_value("")
+  expect(page.get_by_test_id("select-term")).to_have_value("")
+  # expect(page.get_by_test_id("input-academic-year")).to_have_value("")
+
+  # Click the get started link.
+  # page.get_by_role("link", name="Get started").click()
   # Expects page to have a heading with the name of Installation.
-  expect(page.get_by_role("heading", name="Installation")).to_be_visible()
+  # expect(page.get_by_role("heading", name="Installation")).to_be_visible()
 
 def test_has_duplicate_subject_name(page: Page):
   page.goto("https://cs3002-26t3-workshop-test.onrender.com/")
