@@ -126,15 +126,65 @@ def test_main_version(page: Page):
 
   expect(page.get_by_test_id("form-academic")).to_be_visible()
 
-  expect(page.get_by_test_id("select-major")).to_be_empty()
+  expect(page.get_by_test_id("select-major")).to_be_visible()
+  expect(page.get_by_test_id("select-major")).to_have_value("")
+  expect(page.get_by_test_id("input-academic-year")).to_be_visible()
+  expect(page.get_by_test_id("input-academic-year")).to_be_empty()
+  expect(page.get_by_test_id("select-term")).to_be_visible()
+  expect(page.get_by_test_id("select-term")).to_have_value("")
 
-  '''page.get_by_test_id("input-full-name").click()
-  page.get_by_test_id("input-full-name").fill("testone")
-  page.get_by_test_id("input-email").click()
+  expect(page.locator("span.field-error")).to_be_hidden()
+
+  page.get_by_test_id("button-continue-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop.onrender.com/academic")
+
+  expect(page).to_have_title(re.compile("Academic info"))
+  expect(page.locator("header")).to_contain_text("Academic info")
+  expect(page.get_by_test_id("link-step-1")).to_contain_text("✓")
+  expect(page.get_by_test_id("link-step-2")).to_contain_text("›")
+
+  expect(page.get_by_text("Choose your major.")).to_be_visible()
+  expect(page.get_by_text("Enter the academic year.")).to_be_visible()
+  expect(page.get_by_text("Choose a term.")).to_be_visible()
+  
+  page.get_by_test_id("select-major").select_option("Computer Science")
+  page.get_by_test_id("button-continue-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop.onrender.com/academic")
+
+  expect(page).to_have_title(re.compile("Academic info"))
+  expect(page.locator("header")).to_contain_text("Academic info")
+  expect(page.get_by_test_id("link-step-1")).to_contain_text("✓")
+  expect(page.get_by_test_id("link-step-2")).to_contain_text("›")
+
+  expect(page.get_by_text("Enter the academic year.")).to_be_visible()
+  expect(page.get_by_text("Choose a term.")).to_be_visible()
+  expect(page.get_by_text("Choose your major.")).to_be_hidden()
+
+  page.get_by_test_id("input-academic-year").fill("202 dfsdf")
+  page.get_by_test_id("button-continue-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop.onrender.com/academic")
+
+  expect(page).to_have_title(re.compile("Academic info"))
+  expect(page.locator("header")).to_contain_text("Academic info")
+  expect(page.get_by_test_id("link-step-1")).to_contain_text("✓")
+  expect(page.get_by_test_id("link-step-2")).to_contain_text("›")
+
+  expect(page.get_by_text("Choose a term.")).to_be_visible()
+  expect(page.get_by_text("Enter the academic year.")).to_be_hidden()
+  expect(page.get_by_text("Choose your major.")).to_be_hidden()
+
+  page.get_by_test_id("select-term").select_option("T3-2025")
+  page.get_by_test_id("button-continue-academic").click()
+
+  expect(page).to_have_url("https://cs3002-26t3-workshop.onrender.com/subjects")
+  '''
   page.get_by_test_id("input-student-id").click()
   page.get_by_test_id("input-school-name").click()'''
 
-  breakpoint()
+  # breakpoint()
 
 '''def test_has_title(page: Page):
   page.goto("https://playwright.dev/")
