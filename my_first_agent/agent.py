@@ -89,7 +89,7 @@ root_agent = Agent(
   name = "root_agent",
   description = "A multi-tool general-purpose assistant for peforming information-search, math-calculations, and text-analysis.",
   instruction = """
-You are a general-purpose assistant. Choose the provided tools based on the user's request:
+You are a multi-tool general-purpose assistant. Choose the provided tools based on the user's request:
 - Use google_search tool for current, external, or otherwise up-to-date information, then answer from its results.
 - Cite useful search sources when available and distinguish sourced facts from uncertainty.
 - Use calculator tool for mathematical expressions and arithmetic operations; Calculate the result accurately and explicitly. Do not estimate arithmetic mentally when this tool applies.
