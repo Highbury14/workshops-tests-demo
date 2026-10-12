@@ -1,0 +1,639 @@
+PowerShell 7.6.6
+[2026-10-12 06:42:33] C:\Users\jimmy> choco install mongodb-shell
+Chocolatey v2.5.0
+Chocolatey detected you are not running from an elevated command shell
+ (cmd/powershell).
+
+Chocolatey installed 0/0 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+Access to the path 'C:\ProgramData\chocolatey\lib-bad' is denied.
+[2026-10-12 07:27:42] C:\Users\jimmy> Start-Transcript -Path "F:\Project-source-code\workshops tests demo\mongodb_sh_execution.log" -Append
+Transcript started, output file is F:\Project-source-code\workshops tests demo\mongodb_sh_execution.log
+[2026-10-12 07:40:32] C:\Users\jimmy> mongosh "mongodb+srv://cluster0.in2vcqg.mongodb.net/" --apiVersion 1 --username 21f3002389_db_user
+Enter password: ****************
+Current Mongosh Log ID: 6acc44078a0d328b5b3fc893
+Connecting to:          mongodb+srv://<credentials>@cluster0.in2vcqg.mongodb.net/?appName=mongosh+2.13.0
+Using MongoDB:          8.0.34 (API Version 1)
+Using Mongosh:          2.13.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, pseudo-anonymous usage data is collected from interactive and agentic sessions only, and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+Atlas atlas-dag19e-shard-0 [primary] test> exit
+[2026-10-12 07:54:39] C:\Users\jimmy> mongosh "mongodb+srv://cluster0.in2vcqg.mongodb.net/" --apiVersion 1 --username 21f3002389_db_user
+Enter password: ****************
+Current Mongosh Log ID: 6acc452681173ec65990bdc3
+Connecting to:          mongodb+srv://<credentials>@cluster0.in2vcqg.mongodb.net/?appName=mongosh+2.13.0
+Using MongoDB:          8.0.34 (API Version 1)
+Using Mongosh:          2.13.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+Atlas atlas-dag19e-shard-0 [primary] test> exit
+[2026-10-12 07:55:46] C:\Users\jimmy> Stop-Transcript
+Transcript stopped, output file is F:\Project-source-code\workshops tests demo\mongodb_sh_execution.log
+[2026-10-12 08:01:40] C:\Users\jimmy> mongosh
+Current Mongosh Log ID: 6acc47a10097365e9b70cfe1
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.13.0
+MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+[2026-10-12 08:06:17] C:\Users\jimmy> mongosh "mongodb+srv://cluster0.in2vcqg.mongodb.net/" --apiVersion 1 --username 21f3002389_db_user *>&1 | Tee-Object -FilePath "F:\Project-source-code\workshops tests demo\mongodb_sh_execution.log" -Append
+Current Mongosh Log ID: 6acc48e8f3208f28f71f37ca
+Connecting to:          mongodb+srv://<credentials>@cluster0.in2vcqg.mongodb.net/?appName=mongosh+2.13.0
+Enter password:
+MongoInvalidArgumentError: Password cannot be empty
+[2026-10-12 08:11:45] C:\Users\jimmy> mongosh "mongodb+srv://cluster0.in2vcqg.mongodb.net/" --apiVersion 1 --username 21f3002389_db_user --password *>&1 | Tee-Object -FilePath "F:\Project-source-code\workshops tests demo\mongodb_sh_execution.log" -Append
+Current Mongosh Log ID: 6acc4918b8ff226e2951b5f1
+Connecting to:          mongodb+srv://<credentials>@cluster0.in2vcqg.mongodb.net/?appName=mongosh+2.13.0
+Using MongoDB:          8.0.34 (API Version 1)
+Using Mongosh:          2.13.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+Atlas atlas-dag19e-shard-0 [primary] test>
+show dbs
+Atlas atlas-dag19e-shard-0 [primary] test> sample_mflix  142.61 MiB
+admin                0 B
+local                0 B
+show dbs
+Atlas atlas-dag19e-shard-0 [primary] test> sample_mflix  143.27 MiB
+admin                0 B
+local                0 B
+show dbs
+Atlas atlas-dag19e-shard-0 [primary] test> sample_mflix  143.27 MiB
+admin                0 B
+local                0 B
+exit
+Atlas atlas-dag19e-shard-0 [primary] test>
+[2026-10-12 08:19:37] C:\Users\jimmy> mongosh "mongodb+srv://cluster0.in2vcqg.mongodb.net/" --apiVersion 1 --username 21f3002389_db_user --password *>&1 | Tee-Object -FilePath "F:\Project-source-code\workshops tests demo\mongodb_sh_execution.log" -Append
+Current Mongosh Log ID: 6acc4ac983c1af93d0fb81bb
+Connecting to:          mongodb+srv://<credentials>@cluster0.in2vcqg.mongodb.net/?appName=mongosh+2.13.0
+Using MongoDB:          8.0.34 (API Version 1)
+Using Mongosh:          2.13.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+show dbs
+Atlas atlas-dag19e-shard-0 [primary] test> sample_mflix  143.27 MiB
+admin                0 B
+local                0 B
+use sample_mflix
+Atlas atlas-dag19e-shard-0 [primary] test> switched to db sample_mflix
+show collections
+Atlas atlas-dag19e-shard-0 [primary] sample_mflix> comments
+embedded_movies
+movies
+sessions
+theaters
+users
+db.movies.findOne()
+Atlas atlas-dag19e-shard-0 [primary] sample_mflix> {
+  _id: ObjectId('573a1390f29313caabcd42e8'),
+  plot: 'A group of bandits stage a brazen train hold-up, only to find a determined posse hot on their heels.',
+  genres: [ 'Short', 'Western' ],
+  runtime: 11,
+  cast: [
+    'A.C. Abadie',
+    "Gilbert M. 'Broncho Billy' Anderson",
+    'George Barnes',
+    'Justus D. Barnes'
+  ],
+  poster: 'https://m.media-amazon.com/images/M/MV5BMTU3NjE5NzYtYTYyNS00MDVmLWIwYjgtMmYwYWIxZDYyNzU2XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_SY1000_SX677_AL_.jpg',
+  title: 'The Great Train Robbery',
+  fullplot: "Among the earliest existing films in American cinema - notable as the first film that presented a narrative story to tell - it depicts a group of cowboy outlaws who hold up a train and rob the passengers. They are then pursuedby a Sheriff's posse. Several scenes have color included - all hand tinted.",
+  languages: [ 'English' ],
+  released: ISODate('1903-12-01T00:00:00.000Z'),
+  directors: [ 'Edwin S. Porter' ],
+  rated: 'TV-G',
+  awards: { wins: 1, nominations: 0, text: '1 win.' },
+  lastupdated: '2015-08-13 00:27:59.177000000',
+  year: 1903,
+  imdb: { rating: 7.4, votes: 9847, id: 439 },
+  countries: [ 'USA' ],
+  type: 'movie',
+  tomatoes: {
+    viewer: { rating: 3.7, numReviews: 2559, meter: 75 },
+    fresh: 6,
+    critic: { rating: 7.6, numReviews: 6, meter: 100 },
+    rotten: 0,
+    lastUpdated: ISODate('2015-08-08T19:16:10.000Z')
+  },
+  num_mflix_comments: 0
+}
+show dbs
+Atlas atlas-dag19e-shard-0 [primary] sample_mflix> sample_mflix  143.27 MiB
+admin                0 B
+local                0 B
+use library_management
+Atlas atlas-dag19e-shard-0 [primary] sample_mflix> switched to db library_management
+show dbs
+Atlas atlas-dag19e-shard-0 [primary] library_management> sample_mflix  143.27 MiB
+admin                0 B
+local                0 B
+show collections
+Atlas atlas-dag19e-shard-0 [primary] library_management>
+show collection
+Atlas atlas-dag19e-shard-0 [primary] library_management> Uncaught
+MongoshInvalidInputError: [COMMON-10001] 'collection' is not a valid argument for "show".
+show collections
+Atlas atlas-dag19e-shard-0 [primary] library_management>
+db.books.insertMany([{title: "book abcd", author: "author zxyz", copiesTotal: 5, copiesAvailable: 4}, {title: "book efgh", author: "author n,ncv", copiesTotal: 9, copiesAvailable: 3}, {title: "book ouerio3", author: "auth oinvsd3", copiesTotal: 8, copiesAvailable: 5}, {title: "dssdfs 34 book ", author: "8789dsfgsjdf auth", copiesTotal: 4, copiesAvailable: 4}])
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6acc5ab383c1af93d0fb81bc'),
+    '1': ObjectId('6acc5ab383c1af93d0fb81bd'),
+    '2': ObjectId('6acc5ab383c1af93d0fb81be'),
+    '3': ObjectId('6acc5ab383c1af93d0fb81bf')
+  }
+}
+show collections
+Atlas atlas-dag19e-shard-0 [primary] library_management> books
+db.books.findOne()
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+  title: 'book abcd',
+  author: 'author zxyz',
+  copiesTotal: 5,
+  copiesAvailable: 4
+}
+var book1Id = db.books.findOne()
+Atlas atlas-dag19e-shard-0 [primary] library_management>
+book1Id
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+  title: 'book abcd',
+  author: 'author zxyz',
+  copiesTotal: 5,
+  copiesAvailable: 4
+}
+db.loans.findOne()
+Atlas atlas-dag19e-shard-0 [primary] library_management> null
+db.loans.insertOne({bookId: book1Id, memberId: "Member_xcvoe3", borrowedOn: new Date("2026-03-21"), dueDate: new Date("2026-03-31"), returned: false})
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  acknowledged: true,
+  insertedId: ObjectId('6acc5c6383c1af93d0fb81c0')
+}
+db.loans.findOne()
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  _id: ObjectId('6acc5c6383c1af93d0fb81c0'),
+  bookId: {
+    _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+    title: 'book abcd',
+    author: 'author zxyz',
+    copiesTotal: 5,
+    copiesAvailable: 4
+  },
+  memberId: 'Member_xcvoe3',
+  borrowedOn: ISODate('2026-03-21T00:00:00.000Z'),
+  dueDate: ISODate('2026-03-31T00:00:00.000Z'),
+  returned: false
+}
+db.loans.count()
+Atlas atlas-dag19e-shard-0 [primary] library_management> DeprecationWarning: Collection.count() is deprecated. Use countDocuments or estimatedDocumentCount.
+1
+count Documents
+Atlas atlas-dag19e-shard-0 [primary] library_management> Uncaught:
+
+SyntaxError: Missing semicolon. (1:5)
+
+> 1 | count Documents
+    |      ^
+  2 |
+
+db.books.countDocuments({})
+Atlas atlas-dag19e-shard-0 [primary] library_management> 4
+db.loans.countDocuments({})
+Atlas atlas-dag19e-shard-0 [primary] library_management> 1
+db.books.find({copiesAvailable: 0})
+Atlas atlas-dag19e-shard-0 [primary] library_management>
+db.books.countDocuments({copiesAvailable: 0})
+Atlas atlas-dag19e-shard-0 [primary] library_management> 0
+db.loans.find({dueDate: {$lt: new Date()}, returned: false})
+Atlas atlas-dag19e-shard-0 [primary] library_management> [
+  {
+    _id: ObjectId('6acc5c6383c1af93d0fb81c0'),
+    bookId: {
+      _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+      title: 'book abcd',
+      author: 'author zxyz',
+      copiesTotal: 5,
+      copiesAvailable: 4
+    },
+    memberId: 'Member_xcvoe3',
+    borrowedOn: ISODate('2026-03-21T00:00:00.000Z'),
+    dueDate: ISODate('2026-03-31T00:00:00.000Z'),
+    returned: false
+  }
+]
+db.loans.updateOne({bookId: book1Id, memberId: "Member_xcvoe3"}, {$set: {returned: true}})
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+book1Id
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+  title: 'book abcd',
+  author: 'author zxyz',
+  copiesTotal: 5,
+  copiesAvailable: 4
+}
+db.loans.updateOne({bookId: book1Id}, {$inc: {copiesAvailable: 1}})
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+book1Id
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+  title: 'book abcd',
+  author: 'author zxyz',
+  copiesTotal: 5,
+  copiesAvailable: 4
+}
+db.books.findOne()
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+  title: 'book abcd',
+  author: 'author zxyz',
+  copiesTotal: 5,
+  copiesAvailable: 4
+}
+db.books.updateOne({bookId: book1Id}, {$inc: {copiesAvailable: 1}})
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.books.updateOne({_id: book1Id}, {$inc: {copiesAvailable: 1}})
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.books.updateOne({title: "book abcd"}, {$inc: {copiesAvailable: 1}})
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.books.findOne()
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+  title: 'book abcd',
+  author: 'author zxyz',
+  copiesTotal: 5,
+  copiesAvailable: 5
+}
+db.books.findAll()
+Atlas atlas-dag19e-shard-0 [primary] library_management> Uncaught
+TypeError: db.books.findAll is not a function
+db.books.findAll({})
+Atlas atlas-dag19e-shard-0 [primary] library_management> Uncaught
+TypeError: db.books.findAll is not a function
+db.books.find()
+Atlas atlas-dag19e-shard-0 [primary] library_management> [
+  {
+    _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+    title: 'book abcd',
+    author: 'author zxyz',
+    copiesTotal: 5,
+    copiesAvailable: 5
+  },
+  {
+    _id: ObjectId('6acc5ab383c1af93d0fb81bd'),
+    title: 'book efgh',
+    author: 'author n,ncv',
+    copiesTotal: 9,
+    copiesAvailable: 3
+  },
+  {
+    _id: ObjectId('6acc5ab383c1af93d0fb81be'),
+    title: 'book ouerio3',
+    author: 'auth oinvsd3',
+    copiesTotal: 8,
+    copiesAvailable: 5
+  },
+  {
+    _id: ObjectId('6acc5ab383c1af93d0fb81bf'),
+    title: 'dssdfs 34 book ',
+    author: '8789dsfgsjdf auth',
+    copiesTotal: 4,
+    copiesAvailable: 4
+  }
+]
+db.loans.find()
+Atlas atlas-dag19e-shard-0 [primary] library_management> [
+  {
+    _id: ObjectId('6acc5c6383c1af93d0fb81c0'),
+    bookId: {
+      _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+      title: 'book abcd',
+      author: 'author zxyz',
+      copiesTotal: 5,
+      copiesAvailable: 4
+    },
+    memberId: 'Member_xcvoe3',
+    borrowedOn: ISODate('2026-03-21T00:00:00.000Z'),
+    dueDate: ISODate('2026-03-31T00:00:00.000Z'),
+    returned: true,
+    copiesAvailable: 1
+  }
+]
+db.loans.updateOne({bookId: book1Id}, {$unset: {copiesAvailable: ""}})
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.loans.find()
+Atlas atlas-dag19e-shard-0 [primary] library_management> [
+  {
+    _id: ObjectId('6acc5c6383c1af93d0fb81c0'),
+    bookId: {
+      _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+      title: 'book abcd',
+      author: 'author zxyz',
+      copiesTotal: 5,
+      copiesAvailable: 4
+    },
+    memberId: 'Member_xcvoe3',
+    borrowedOn: ISODate('2026-03-21T00:00:00.000Z'),
+    dueDate: ISODate('2026-03-31T00:00:00.000Z'),
+    returned: true
+  }
+]
+db.books.find()
+Atlas atlas-dag19e-shard-0 [primary] library_management> [
+  {
+    _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+    title: 'book abcd',
+    author: 'author zxyz',
+    copiesTotal: 5,
+    copiesAvailable: 5
+  },
+  {
+    _id: ObjectId('6acc5ab383c1af93d0fb81bd'),
+    title: 'book efgh',
+    author: 'author n,ncv',
+    copiesTotal: 9,
+    copiesAvailable: 3
+  },
+  {
+    _id: ObjectId('6acc5ab383c1af93d0fb81be'),
+    title: 'book ouerio3',
+    author: 'auth oinvsd3',
+    copiesTotal: 8,
+    copiesAvailable: 5
+  },
+  {
+    _id: ObjectId('6acc5ab383c1af93d0fb81bf'),
+    title: 'dssdfs 34 book ',
+    author: '8789dsfgsjdf auth',
+    copiesTotal: 4,
+    copiesAvailable: 4
+  }
+]
+db.loans.aggregate([{$group: {_id: "$bookId", timesBorrowed: {$sum: 1}}}, {$sort: {timesBorrowed: -1}}])
+Atlas atlas-dag19e-shard-0 [primary] library_management> [
+  {
+    _id: {
+      _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+      title: 'book abcd',
+      author: 'author zxyz',
+      copiesTotal: 5,
+      copiesAvailable: 4
+    },
+    timesBorrowed: 1
+  }
+]
+db.loans.createIndex({memberId: 1})
+Atlas atlas-dag19e-shard-0 [primary] library_management> memberId_1
+db.books.getIndexes()
+Atlas atlas-dag19e-shard-0 [primary] library_management> [ { v: 2, key: { _id: 1 }, name: '_id_' } ]
+db.loans.getIndexes()
+Atlas atlas-dag19e-shard-0 [primary] library_management> [
+  { v: 2, key: { _id: 1 }, name: '_id_' },
+  { v: 2, key: { memberId: 1 }, name: 'memberId_1' }
+]
+db.loans.find()
+Atlas atlas-dag19e-shard-0 [primary] library_management> [
+  {
+    _id: ObjectId('6acc5c6383c1af93d0fb81c0'),
+    bookId: {
+      _id: ObjectId('6acc5ab383c1af93d0fb81bc'),
+      title: 'book abcd',
+      author: 'author zxyz',
+      copiesTotal: 5,
+      copiesAvailable: 4
+    },
+    memberId: 'Member_xcvoe3',
+    borrowedOn: ISODate('2026-03-21T00:00:00.000Z'),
+    dueDate: ISODate('2026-03-31T00:00:00.000Z'),
+    returned: true
+  }
+]
+db.loans.find().explain("executionStats")
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'library_management.loans',
+    parsedQuery: {},
+    indexFilterSet: false,
+    queryHash: '8F2383EE',
+    planCacheShapeHash: '8F2383EE',
+    planCacheKey: '7DF350EE',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: { isCached: false, stage: 'COLLSCAN', direction: 'forward' },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 1,
+    executionTimeMillis: 0,
+    totalKeysExamined: 0,
+    totalDocsExamined: 1,
+    executionStages: {
+      isCached: false,
+      stage: 'COLLSCAN',
+      nReturned: 1,
+      executionTimeMillisEstimate: 0,
+      works: 2,
+      advanced: 1,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      direction: 'forward',
+      docsExamined: 1
+    }
+  },
+  queryShapeHash: 'A75DF42BFFCECF40F062746CC98D639FAFB7976842A8D9D33FA5CD08465F6318',
+  command: { find: 'loans', filter: {}, '$db': 'library_management' },
+  serverInfo: {
+    host: 'ac-bscr3my-shard-00-02.in2vcqg.mongodb.net',
+    port: 27017,
+    version: '8.0.34',
+    gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1791780121, i: 12 }),
+    signature: {
+      hash: Binary.createFromBase64('1bWk5LzBsOMK/MPWXmckw/AoSpA=', 0),
+      keyId: Long('7657272900256268291')
+    }
+  },
+  operationTime: Timestamp({ t: 1791780121, i: 12 })
+}
+db.loans.find({memberId: "Member_xcvoe3"}).explain("executionStats")
+Atlas atlas-dag19e-shard-0 [primary] library_management> {
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'library_management.loans',
+    parsedQuery: { memberId: { '$eq': 'Member_xcvoe3' } },
+    indexFilterSet: false,
+    queryHash: '4F04134D',
+    planCacheShapeHash: '4F04134D',
+    planCacheKey: 'EF031AA2',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { memberId: 1 },
+        indexName: 'memberId_1',
+        isMultiKey: false,
+        multiKeyPaths: { memberId: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { memberId: [ '["Member_xcvoe3", "Member_xcvoe3"]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 1,
+    executionTimeMillis: 1,
+    totalKeysExamined: 1,
+    totalDocsExamined: 1,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 1,
+      executionTimeMillisEstimate: 1,
+      works: 2,
+      advanced: 1,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 1,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 1,
+        executionTimeMillisEstimate: 1,
+        works: 2,
+        advanced: 1,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { memberId: 1 },
+        indexName: 'memberId_1',
+        isMultiKey: false,
+        multiKeyPaths: { memberId: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { memberId: [ '["Member_xcvoe3", "Member_xcvoe3"]' ] },
+        keysExamined: 1,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: 'E5E8063A77F0DF062F98EDA446FA5246B891BFA1F65761669181440E322034D1',
+  command: {
+    find: 'loans',
+    filter: { memberId: 'Member_xcvoe3' },
+    '$db': 'library_management'
+  },
+  serverInfo: {
+    host: 'ac-bscr3my-shard-00-02.in2vcqg.mongodb.net',
+    port: 27017,
+    version: '8.0.34',
+    gitVersion: '51db4515a6597aedcf6188ee4e48a27e65b065ae'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1791780196, i: 14 }),
+    signature: {
+      hash: Binary.createFromBase64('Pa+L0Tu9IXfZ2zNWhEjWWv5mgcs=', 0),
+      keyId: Long('7657272900256268291')
+    }
+  },
+  operationTime: Timestamp({ t: 1791780196, i: 14 })
+}
