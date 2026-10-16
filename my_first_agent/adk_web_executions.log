@@ -557,3 +557,2414 @@ INFO:     127.0.0.1:56706 - "GET /dev/apps/my_first_agent/debug/trace/session/f2
 INFO:     127.0.0.1:56712 - "GET /config/telemetry HTTP/1.1" 200 OK
 INFO:     127.0.0.1:56714 - "GET /config/telemetry HTTP/1.1" 200 OK
 INFO:     Shutting down
+--- [2026-10-14 09:54:00] New adk web Session ---
+WARNING: The --reload flag is not supported on Windows because it forces Uvicorn to use SelectorEventLoop, which does not support subprocesses (needed for executing tools). Forcing --no-reload.
+2026-10-14 09:54:59,964 - INFO - service_factory.py:333 - Using in-memory memory service
+2026-10-14 09:55:00,000 - INFO - local_storage.py:89 - Using per-agent session storage rooted at F:\Project-source-code\workshops tests demo
+2026-10-14 09:55:00,006 - INFO - local_storage.py:121 - Using per-agent artifact storage rooted at F:\Project-source-code\workshops tests demo
+C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\cli\fast_api.py:285: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\auth\credential_service\in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [4908]
+INFO:     Waiting for application startup.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server started                                                      |
+|                                                                             |
+| For local testing, access at http://127.0.0.1:8000.                         |
++-----------------------------------------------------------------------------+
+
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53747 - "GET /dev-ui/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /dev-ui/chunk-XCIW2OUI.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53751 - "GET /dev-ui/chunk-NLTM4DEO.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53755 - "GET /dev-ui/chunk-OQGNECBI.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53747 - "GET /dev-ui/chunk-IDCXNWW3.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53757 - "GET /dev-ui/chunk-SBIPGDQI.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53749 - "GET /dev-ui/chunk-C7C63WJA.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53747 - "GET /dev-ui/chunk-ZSPVMZGT.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53755 - "GET /dev-ui/chunk-JBDBESHO.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53751 - "GET /dev-ui/chunk-63Y33MON.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /dev-ui/main-KCUV4MHY.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53757 - "GET /dev-ui/polyfills-5CFQRCPP.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53749 - "GET /dev-ui/chunk-PRKFGJVH.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53751 - "GET /dev-ui/styles-4R3GDHUZ.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53751 - "GET /dev-ui/chunk-XFUII6LE.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53757 - "GET /dev-ui/chunk-ORABBJZL.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53749 - "GET /dev-ui/chunk-ROUF34MA.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53747 - "GET /dev-ui/chunk-BTIP5KPZ.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53755 - "GET /dev-ui/chunk-TLHHCYOY.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /dev-ui/chunk-GG3CUCE3.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /dev-ui/chunk-JHJZJ2D5.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53755 - "GET /dev-ui/chunk-YUSHYV7C.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53749 - "GET /dev-ui/chunk-BZGM3F3K.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /dev-ui/assets/config/runtime-config.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53749 - "GET /dev-ui/adk_favicon.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53749 - "GET /dev-ui/prism-dark.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53749 - "GET /list-apps?relative_path=./ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53747 - "GET /config/telemetry HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53755 - "GET /dev-ui/assets/ADK-512-color.svg HTTP/1.1" 200 OK
+2026-10-14 09:55:32,324 - INFO - envs.py:83 - Loaded .env file for my_first_agent at F:\Project-source-code\workshops tests demo\my_first_agent\.env
+2026-10-14 09:55:33,116 - INFO - agent_loader.py:187 - Found root_agent in my_first_agent.agent
+INFO:     127.0.0.1:53755 - "GET /dev/apps/my_first_agent/build_graph HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53747 - "GET /dev/apps/my_first_agent/build_graph_image?dark_mode=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53756 - "GET /dev/apps/my_first_agent/build_graph_image?dark_mode=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53749 - "GET /dev/apps/my_first_agent/builder?ts=1791951931995 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53763 - "GET /dev/apps/my_first_agent/eval_sets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53764 - "GET /dev/apps/my_first_agent/eval_results HTTP/1.1" 200 OK
+2026-10-14 09:56:24,365 - INFO - local_storage.py:65 - Creating local session service at F:\Project-source-code\workshops tests demo\my_first_agent\.adk\session.db
+2026-10-14 09:56:24,742 - INFO - api_server.py:1155 - New session created: b851e595-481a-4952-a0f7-bcb5609c9ee5
+INFO:     127.0.0.1:53769 - "POST /apps/my_first_agent/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53769 - "POST /run_sse HTTP/1.1" 200 OK
+C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\llm_request.py:306: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
+  declaration = tool._get_declaration()
+2026-10-14 09:56:59,967 - INFO - google_llm.py:263 - Sending out request, model: gemini-3.6-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-10-14 09:57:03,036 - INFO - google_llm.py:360 - Response received from the model.
+2026-10-14 09:57:03,341 - INFO - google_llm.py:263 - Sending out request, model: gemini-3.6-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-10-14 09:57:03,342 - INFO - models.py:8428 - AFC is enabled with max remote calls: 10.
+2026-10-14 09:57:03,342 - WARNING - models.py:8432 - Direct use of automatic function calling (AFC) in AsyncModels.generate_content is not recommended. Instead, we recommend to use AFC in AsyncChat.send_message. Similarly, direct use of AFC in AsyncModels.generate_content_stream is not recommended. Instead, we recommend to use AFC in AsyncChat.send_message_stream.
+2026-10-14 09:57:04,453 - ERROR - _node_runner.py:164 - Node execution failed with exception
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+2026-10-14 09:57:04,699 - ERROR - runners.py:888 - Root node google_search_agent failed.
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+2026-10-14 09:57:05,095 - ERROR - _node_runner.py:164 - Node execution failed with exception
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 433, in _run_one_step_async
+    async for event in agen:
+    ...<5 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 534, in _postprocess_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 588, in _postprocess_handle_function_calls_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_function_call_postprocessor.py", line 77, in postprocess_handle_function_calls_async
+    if function_response_event := await functions.handle_function_calls_async(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, function_call_event, llm_request.tools_dict
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 277, in handle_function_calls_async
+    return await functions.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 257, in handle_function_call_list_async
+    return await _batch_tool_executor.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 405, in handle_function_call_list_async
+    return await _execute_prepared_function_calls_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_calls, agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 326, in _execute_prepared_function_calls_async
+    maybe_function_response_events = await _gather_or_cancel(tasks)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 192, in _gather_or_cancel
+    return list(await asyncio.gather(*tasks))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 953, in _execute_single_prepared_call_async
+    return await _execute_single_prepared_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_call, agent, tool_runner=call_tool
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 906, in _execute_single_prepared_call
+    tel_ctx.function_response_event = await _run_with_trace()
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 847, in _run_with_trace
+    raise tool_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 829, in _run_with_trace
+    function_response = await tool_runner()
+                        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 947, in call_tool
+    return await _call_tool_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 450, in _call_tool_async
+    result: object = await tool.run_async(args=args, tool_context=tool_context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\tools\agent_tool.py", line 337, in run_async
+    async for event in agen:
+    ...<7 lines>...
+        last_grounding_metadata = event.grounding_metadata
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 1240, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 590, in _run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 357, in run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 283, in _run
+    await runner._cleanup_root_task(  # pylint: disable=protected-access
+        task, runner.agent.name
+    )
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+2026-10-14 09:57:05,298 - ERROR - runners.py:888 - Root node root_agent failed.
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 433, in _run_one_step_async
+    async for event in agen:
+    ...<5 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 534, in _postprocess_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 588, in _postprocess_handle_function_calls_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_function_call_postprocessor.py", line 77, in postprocess_handle_function_calls_async
+    if function_response_event := await functions.handle_function_calls_async(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, function_call_event, llm_request.tools_dict
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 277, in handle_function_calls_async
+    return await functions.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 257, in handle_function_call_list_async
+    return await _batch_tool_executor.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 405, in handle_function_call_list_async
+    return await _execute_prepared_function_calls_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_calls, agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 326, in _execute_prepared_function_calls_async
+    maybe_function_response_events = await _gather_or_cancel(tasks)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 192, in _gather_or_cancel
+    return list(await asyncio.gather(*tasks))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 953, in _execute_single_prepared_call_async
+    return await _execute_single_prepared_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_call, agent, tool_runner=call_tool
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 906, in _execute_single_prepared_call
+    tel_ctx.function_response_event = await _run_with_trace()
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 847, in _run_with_trace
+    raise tool_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 829, in _run_with_trace
+    function_response = await tool_runner()
+                        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 947, in call_tool
+    return await _call_tool_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 450, in _call_tool_async
+    result: object = await tool.run_async(args=args, tool_context=tool_context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\tools\agent_tool.py", line 337, in run_async
+    async for event in agen:
+    ...<7 lines>...
+        last_grounding_metadata = event.grounding_metadata
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 1240, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 590, in _run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 357, in run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 283, in _run
+    await runner._cleanup_root_task(  # pylint: disable=protected-access
+        task, runner.agent.name
+    )
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+2026-10-14 09:57:05,344 - ERROR - api_server.py:2162 - Error in event_generator: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\cli\api_server.py", line 2152, in event_generator
+    await producer_task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\cli\api_server.py", line 2088, in _produce_events
+    async for event in agen:
+    ...<2 lines>...
+      next_step_event.clear()
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 1240, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 590, in _run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 357, in run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 283, in _run
+    await runner._cleanup_root_task(  # pylint: disable=protected-access
+        task, runner.agent.name
+    )
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 433, in _run_one_step_async
+    async for event in agen:
+    ...<5 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 534, in _postprocess_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 588, in _postprocess_handle_function_calls_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_function_call_postprocessor.py", line 77, in postprocess_handle_function_calls_async
+    if function_response_event := await functions.handle_function_calls_async(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, function_call_event, llm_request.tools_dict
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 277, in handle_function_calls_async
+    return await functions.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 257, in handle_function_call_list_async
+    return await _batch_tool_executor.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 405, in handle_function_call_list_async
+    return await _execute_prepared_function_calls_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_calls, agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 326, in _execute_prepared_function_calls_async
+    maybe_function_response_events = await _gather_or_cancel(tasks)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 192, in _gather_or_cancel
+    return list(await asyncio.gather(*tasks))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 953, in _execute_single_prepared_call_async
+    return await _execute_single_prepared_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_call, agent, tool_runner=call_tool
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 906, in _execute_single_prepared_call
+    tel_ctx.function_response_event = await _run_with_trace()
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 847, in _run_with_trace
+    raise tool_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 829, in _run_with_trace
+    function_response = await tool_runner()
+                        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 947, in call_tool
+    return await _call_tool_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 450, in _call_tool_async
+    result: object = await tool.run_async(args=args, tool_context=tool_context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\tools\agent_tool.py", line 337, in run_async
+    async for event in agen:
+    ...<7 lines>...
+        last_grounding_metadata = event.grounding_metadata
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 1240, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 590, in _run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 357, in run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 283, in _run
+    await runner._cleanup_root_task(  # pylint: disable=protected-access
+        task, runner.agent.name
+    )
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+INFO:     127.0.0.1:53769 - "GET /dev/apps/my_first_agent/debug/trace/session/b851e595-481a-4952-a0f7-bcb5609c9ee5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53777 - "POST /run_sse HTTP/1.1" 200 OK
+2026-10-14 09:57:40,261 - WARNING - _rearranger.py:351 - Dropping function calls with no matching function response: ['call_487163']
+2026-10-14 09:57:41,483 - INFO - google_llm.py:263 - Sending out request, model: gemini-3.6-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-10-14 09:57:43,504 - INFO - google_llm.py:360 - Response received from the model.
+2026-10-14 09:57:43,663 - INFO - google_llm.py:263 - Sending out request, model: gemini-3.6-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-10-14 09:57:43,664 - INFO - models.py:8428 - AFC is enabled with max remote calls: 10.
+2026-10-14 09:57:44,094 - ERROR - _node_runner.py:164 - Node execution failed with exception
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+2026-10-14 09:57:44,104 - ERROR - runners.py:888 - Root node google_search_agent failed.
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+2026-10-14 09:57:44,155 - ERROR - _node_runner.py:164 - Node execution failed with exception
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 433, in _run_one_step_async
+    async for event in agen:
+    ...<5 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 534, in _postprocess_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 588, in _postprocess_handle_function_calls_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_function_call_postprocessor.py", line 77, in postprocess_handle_function_calls_async
+    if function_response_event := await functions.handle_function_calls_async(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, function_call_event, llm_request.tools_dict
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 277, in handle_function_calls_async
+    return await functions.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 257, in handle_function_call_list_async
+    return await _batch_tool_executor.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 405, in handle_function_call_list_async
+    return await _execute_prepared_function_calls_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_calls, agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 326, in _execute_prepared_function_calls_async
+    maybe_function_response_events = await _gather_or_cancel(tasks)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 192, in _gather_or_cancel
+    return list(await asyncio.gather(*tasks))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 953, in _execute_single_prepared_call_async
+    return await _execute_single_prepared_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_call, agent, tool_runner=call_tool
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 906, in _execute_single_prepared_call
+    tel_ctx.function_response_event = await _run_with_trace()
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 847, in _run_with_trace
+    raise tool_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 829, in _run_with_trace
+    function_response = await tool_runner()
+                        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 947, in call_tool
+    return await _call_tool_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 450, in _call_tool_async
+    result: object = await tool.run_async(args=args, tool_context=tool_context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\tools\agent_tool.py", line 337, in run_async
+    async for event in agen:
+    ...<7 lines>...
+        last_grounding_metadata = event.grounding_metadata
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 1240, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 590, in _run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 357, in run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 283, in _run
+    await runner._cleanup_root_task(  # pylint: disable=protected-access
+        task, runner.agent.name
+    )
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+2026-10-14 09:57:44,333 - ERROR - runners.py:888 - Root node root_agent failed.
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 433, in _run_one_step_async
+    async for event in agen:
+    ...<5 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 534, in _postprocess_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 588, in _postprocess_handle_function_calls_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_function_call_postprocessor.py", line 77, in postprocess_handle_function_calls_async
+    if function_response_event := await functions.handle_function_calls_async(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, function_call_event, llm_request.tools_dict
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 277, in handle_function_calls_async
+    return await functions.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 257, in handle_function_call_list_async
+    return await _batch_tool_executor.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 405, in handle_function_call_list_async
+    return await _execute_prepared_function_calls_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_calls, agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 326, in _execute_prepared_function_calls_async
+    maybe_function_response_events = await _gather_or_cancel(tasks)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 192, in _gather_or_cancel
+    return list(await asyncio.gather(*tasks))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 953, in _execute_single_prepared_call_async
+    return await _execute_single_prepared_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_call, agent, tool_runner=call_tool
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 906, in _execute_single_prepared_call
+    tel_ctx.function_response_event = await _run_with_trace()
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 847, in _run_with_trace
+    raise tool_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 829, in _run_with_trace
+    function_response = await tool_runner()
+                        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 947, in call_tool
+    return await _call_tool_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 450, in _call_tool_async
+    result: object = await tool.run_async(args=args, tool_context=tool_context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\tools\agent_tool.py", line 337, in run_async
+    async for event in agen:
+    ...<7 lines>...
+        last_grounding_metadata = event.grounding_metadata
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 1240, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 590, in _run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 357, in run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 283, in _run
+    await runner._cleanup_root_task(  # pylint: disable=protected-access
+        task, runner.agent.name
+    )
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+2026-10-14 09:57:44,384 - ERROR - api_server.py:2162 - Error in event_generator: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 355, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 8461, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=final_parsed_config_to_call
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\models.py", line 6915, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1736, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._async_request_once, http_request, stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\genai\errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\cli\api_server.py", line 2152, in event_generator
+    await producer_task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\cli\api_server.py", line 2088, in _produce_events
+    async for event in agen:
+    ...<2 lines>...
+      next_step_event.clear()
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 1240, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 590, in _run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 357, in run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 283, in _run
+    await runner._cleanup_root_task(  # pylint: disable=protected-access
+        task, runner.agent.name
+    )
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 433, in _run_one_step_async
+    async for event in agen:
+    ...<5 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 534, in _postprocess_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 588, in _postprocess_handle_function_calls_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_function_call_postprocessor.py", line 77, in postprocess_handle_function_calls_async
+    if function_response_event := await functions.handle_function_calls_async(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, function_call_event, llm_request.tools_dict
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 277, in handle_function_calls_async
+    return await functions.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_functions.py", line 257, in handle_function_call_list_async
+    return await _batch_tool_executor.handle_function_call_list_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 405, in handle_function_call_list_async
+    return await _execute_prepared_function_calls_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_calls, agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 326, in _execute_prepared_function_calls_async
+    maybe_function_response_events = await _gather_or_cancel(tasks)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_batch_executor.py", line 192, in _gather_or_cancel
+    return list(await asyncio.gather(*tasks))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 953, in _execute_single_prepared_call_async
+    return await _execute_single_prepared_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        invocation_context, prepared_call, agent, tool_runner=call_tool
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 906, in _execute_single_prepared_call
+    tel_ctx.function_response_event = await _run_with_trace()
+                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 847, in _run_with_trace
+    raise tool_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 829, in _run_with_trace
+    function_response = await tool_runner()
+                        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 947, in call_tool
+    return await _call_tool_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\tools\_caller.py", line 450, in _call_tool_async
+    result: object = await tool.run_async(args=args, tool_context=tool_context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\tools\agent_tool.py", line 337, in run_async
+    async for event in agen:
+    ...<7 lines>...
+        last_grounding_metadata = event.grounding_metadata
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 1240, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 590, in _run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 357, in run_node_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 283, in _run
+    await runner._cleanup_root_task(  # pylint: disable=protected-access
+        task, runner.agent.name
+    )
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\runners.py", line 877, in _cleanup_root_task
+    await task
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner_utils.py", line 259, in _drive_root_node
+    raise e.error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 138, in run
+    await self._execute_node(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 307, in _execute_node
+    await self._run_node_loop(ctx, node_input)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_node_runner.py", line 321, in _run_node_loop
+    async for event in agen:
+    ...<8 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_base_node.py", line 190, in run
+    async for item in agen:
+    ...<12 lines>...
+        yield Event(output=validated)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 683, in _run_impl
+    async for event in agen:
+    ...<4 lines>...
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\workflow\_llm_agent_wrapper.py", line 494, in run_llm_agent_as_node
+    async for event in run_iter:
+    ...<31 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 328, in run_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 422, in _run_with_lifecycle
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\base_agent.py", line 392, in _run
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\agents\llm_agent.py", line 632, in _run_async_impl
+    async for event in agen:
+    ...<8 lines>...
+        should_pause = True
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 333, in run_async
+    async for event in agen:
+    ...<3 lines>...
+        break
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 415, in _run_one_step_async
+    async for llm_response in agen:
+    ...<23 lines>...
+          yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 607, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 309, in call_llm_async
+    async for event in agen:
+      yield event
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\utils\_runner_utils.py", line 42, in _with_caller_context
+    async for item in a:
+    ...<4 lines>...
+        context.detach(token)
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_model_call.py", line 273, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<20 lines>...
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\base_llm_flow.py", line 657, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 385, in run_and_handle_error
+    raise model_error
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\flows\llm_flows\core\_finalizer.py", line 358, in run_and_handle_error
+    async for llm_response in agen:
+      tel_ctx.record_llm_response(invocation_context, llm_response)
+      yield llm_response
+  File "C:\Users\jimmy\AppData\Roaming\Python\Python313\site-packages\google\adk\models\google_llm.py", line 381, in generate_content_async
+    raise _ResourceExhaustedError(ce) from ce
+google.adk.models.google_llm._ResourceExhaustedError: 
+On how to mitigate this issue, please refer to:
+
+https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted
+
+
+429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}]}}
+INFO:     127.0.0.1:53777 - "GET /dev/apps/my_first_agent/debug/trace/session/b851e595-481a-4952-a0f7-bcb5609c9ee5 HTTP/1.1" 200 OK
